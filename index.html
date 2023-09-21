@@ -24,13 +24,22 @@
     <main>
      <div class="container">
         <h2>Enter Email address to verify</h2>
-        <form class="f" method="post" action="/submit">
+        <form id="f" class="f" action="/submit">
             <div class="email">
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" placeholder="Enter your email address">
         </div>
             <input  class="sbtn" type="submit" value="check"> 
         </form>     
+     </div>
+
+
+     <div class="container">
+        <h2>Your result:</h2>
+        <div id="resultconn">
+            Your result will be shown here
+            
+        </div>
      </div>
     </main>
     <footer>
