@@ -1,8 +1,106 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Anatolian+Hieroglyphs&family=Poppins&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans Anatolian Hieroglyphs', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+}
+header{
+    min-height: 10vh;
+
+    
+
 }
 
-body{
-    background-color: brown;
+
+
+
+header nav{
+    color:white;
+    display: flex;
+    padding-left:  5px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+   
 }
+header nav .logo{
+    padding: 10px 5px;
+font-size: 1.3rem;;
+}
+header nav ul{
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    
+}
+
+header nav ul li{
+    list-style: none;
+    padding: 0 0.5rem;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover{
+    font-weight: bolder;
+    font-size: 1.5rem;
+color:rgb(129, 136, 160)
+
+}
+
+
+
+/* main */
+
+main{
+    min-height: 85vh;
+}
+main .container{
+    max-width: 80vw;
+    margin: auto;
+    padding: 15px;
+}
+.f{
+     padding: 10px
+}
+.email{
+    margin: 10px 0px;
+}
+
+.sbtn{
+    background-color: black;
+    color: white;
+    padding: 7px 10px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    cursor: pointer;
+}
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        font-size: 15px;
+    }
+    header nav{
+        flex-direction: column;
+    }
+   
+  }

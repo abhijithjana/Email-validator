@@ -2,12 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/index.js"></script>
 </head>
 <body>
-    
+    <header>
+      <nav>
+        <div class="logo">MailVerify</div>
+      
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/"> About</a></li>
+                <li><a href="/"> Contact us</a></li>
+            </ul>
+        
+      </nav>
+    </header>
+    <main>
+     <div class="container">
+        <h2>Enter Email address to verify</h2>
+        <form class="f" method="post" action="/submit">
+            <div class="email">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address">
+        </div>
+            <input  class="sbtn" type="submit" value="check"> 
+        </form>     
+     </div>
+    </main>
+    <footer>
+     Copyright | www.com |All Rights reserve
+    </footer>
 </body>
 </html>
